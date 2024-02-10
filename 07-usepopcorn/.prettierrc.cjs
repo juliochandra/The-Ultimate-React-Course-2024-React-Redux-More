@@ -9,7 +9,7 @@ module.exports = {
     {
       files: "*.js",
       options: {
-        tabWidth: 5,
+        tabWidth: 3,
         trailingComma: "none" // Change this line to disable trailing commas
       }
     },
