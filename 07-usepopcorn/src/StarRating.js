@@ -49,7 +49,7 @@ function StarRating({
       <div style={containerStyle} className={className}>
          <div style={starContinerStyle}>
             {Array.from({ length: maxRating }, (_, i) => (
-               <Start
+               <Star
                   key={i}
                   full={tempRating ? tempRating >= i + 1 : rating >= i + 1}
                   onRate={() => handleRating(i + 1)}
@@ -69,7 +69,7 @@ function StarRating({
    );
 }
 
-function Start({ onRate, full, onHoverIn, onHoverout, color, size }) {
+function Star({ onRate, full, onHoverIn, onHoverout, color, size }) {
    const starStyle = {
       witdh: `${size}px`,
       height: `${size}px`,
